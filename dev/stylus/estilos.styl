@@ -1,0 +1,253 @@
+@import "nib"
+
+$gray = #EAEAEA
+$gray2 = #494949
+$gray3 = #515151
+
+$white = #FFF
+
+$black = #000
+$black2 = #232323
+$black3 = #333333
+
+$blue = #005975
+$blue2 = #384288
+
+$transparent_blue = rgba(0,47,89,.82)
+
+.bc_fb
+.bc_tw
+.bc_gp
+	cursor pointer
+
+.Proy
+	/*Descripción principal*/
+	&-vivDescMain
+		display inline-block
+		width 100%
+		text-align center
+		margin-bottom 10px
+		// margin 30px 0		
+		
+	&-vivDescTitle
+		display inline-block
+		width 100%
+		color $blue
+		font-family 'roboto_condensedbold'
+		font-weight 700
+		font-size 23px
+		vertical-align top
+		margin 0
+		float left
+	&-vivDescContainer
+		display inline-block
+		width 90%
+		vertical-align top
+		margin 0 5% 
+		float right
+		text-align justify
+		
+	&-vivDesc
+		font-family 'roboto_condensedregular'
+		color $gray3
+		font-weight 400
+		font-size 16px
+		margin 0
+		
+	/*items proyectos*/
+	&-vivItem
+		display inline-block
+		background $gray
+		text-align center
+		max-width 220px
+		cursor pointer
+		text-decoration none
+		position relative
+		margin 16px		
+		
+	&-vivItemWhite
+		display inline-block
+		background $white
+		margin 7px
+		
+	&-vivImageContainer
+		display inline-block
+		margin 7px
+		padding 0
+		// width 70%
+	&-vivImage
+		width 100%
+		height 100%
+		
+	&-vivTitle
+		font-weight 700
+		font-size 18px
+		color $black2
+		margin 0
+		font-family 'roboto_condensedbold'
+		max-width 150px
+		height 55px
+		display inline-block
+	&-vivUbi
+	&-vivUbiBold
+	&-vivTitle2
+		font-size 16px
+		
+	&-vivUbi
+		color $gray2
+		font-weight 400		
+		font-family 'roboto_condensedregular'
+		margin 0
+		&:first-of-type
+			margin-top 20px
+	&-vivUbiBold
+		color $gray2
+		font-weight 700		
+		font-family 'roboto_condensedbold'
+	&-vivTitle2
+		color $blue
+		font-weight 700		
+		text-transform uppercase
+		font-family 'roboto_condensedbold'
+		margin 14px 0 7px
+		
+	&-vivPrice
+		color $black3
+		font-weight 700
+		font-size 20px
+		font-family 'roboto_condensedbold'
+		margin .3em 0
+	
+	/*Shadoow*/	
+	&-vivShadow
+		position absolute
+		top 0
+		left 0
+		right 0
+		width 100%
+		height 100%
+		display inline-block		
+		// background $transparent_blue
+		transition all 1s ease
+		&:hover
+			background $transparent_blue
+			.Proy-vivShadowButton
+				display inline-block
+				
+	&-vivShadowButton
+		display none
+		// display inline-block
+		margin 0 auto
+		position relative
+		top 70%
+		color $white
+		cursor pointer
+		border 1px solid $white
+		font-weight 700
+		font-size 20px
+		font-family 'roboto_condensedbold'
+		width 90%
+		max-width 177px
+		padding .3em
+	
+	/*Ver proximos proyectos*/
+	&-vivButtonContainer
+		display inline-block
+		width 100%
+		text-align center
+	&-vivButton
+		display inline-block		
+		background $blue2
+		color $white
+		cursor pointer
+	&-vivButtonText
+		display inline-block
+		font-size 16px
+		font-weight 400
+		font-family 'roboto_condensedregular'
+		text-transform uppercase
+		vertical-align middle
+		margin-left 1em
+	&-vivButtonFlecha
+		display inline-block
+		vertical-align middle
+		
+	/*Otros proyectos*/
+	&-vivOtros
+		display inline-block
+		width 100%
+		text-align center
+	&-vivOtrosTitle
+		color $blue
+		font-weight 700
+		font-size 23px
+		font-family 'roboto_condensedbold'
+		
+	/*item otros proy*/
+	&-vivOtrosItem
+		display inline-block
+		max-width 332px
+		cursor pointer
+		text-decoration none
+		margin 9px
+	&-vivOtrosItemTitleContainer
+		background $blue
+		// padding 1em
+		text-align center
+		height 82px		
+		width 100%
+		display table
+	&-vivOtrosItemTitle
+		display inline-block		
+		color $white
+		font-weight 700
+		font-size 24px
+		font-family 'roboto_condensedbold'
+		display table-cell
+		vertical-align middle
+		// padding 1em 1.3em
+		
+		
+@media only screen and (min-width: 1050px)
+	.Proy
+		/*Descripción principal*/
+		&-vivDescMain
+			// padding-top 40px
+			margin 40px 0 20px
+			text-align left
+		&-vivDescTitle
+			font-size 36px
+			// font-size 44px
+			max-width 50%
+		&-vivDesc
+			font-size 21px		
+		&-vivDescContainer			
+			max-width 50%			
+			margin 0
+		/*items proyectos*/
+		&-vivItem
+			max-width 285px
+		&-vivImageContainer
+			width auto
+		&-vivTitle
+			font-size 22.57px
+			max-width 200px
+		&-vivUbi
+		&-vivUbiBold
+		&-vivTitle2
+			font-size 20px			
+		&-vivPrice
+			font-size 34px
+			
+		/*shadow*/
+		&-vivShadowButton
+			font-size 34px
+			
+		/*Ver proximos proyectos*/
+		&-vivButton
+			font-size 21px
+		&-vivOtrosTitle
+			font-size 36px
+			// font-size 44px
+		&-vivOtrosItemTitle
+			font-size 28px
